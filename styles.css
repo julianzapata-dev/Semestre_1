@@ -1,4 +1,6 @@
-/* Paleta de colores principal del proyecto */
+/*========================================
+=             PALETA DE COLORES          =
+========================================*/
 :root {
     --azul-oscuro: #0b1f3a;
     --azul-claro: #5bc0eb;
@@ -87,9 +89,11 @@ nav a:hover {
     font-weight: bold;
 }
 
-/*Página index: Main*/
+/*========================================
+=                 HERO                   =
+========================================*/
 
-/*hero --Parte principal y mas visible de la pagina*/
+/* Sección principal de presentación */
 .hero {
     width: 90%;
     max-width: 1200px;
@@ -100,6 +104,7 @@ nav a:hover {
     gap: 60px;
 }
 
+/* Columnas del Hero */
 .hero-texto {
     flex: 1;
 }
@@ -114,20 +119,21 @@ nav a:hover {
     border-radius: 20px;
 }
 
+/* Contenido textual */
 .hero-slogan {
     color: var(--verde);
     font-size: 23px;
     font-weight: bold;
-    margin-bottom: 20px;
     font-style: italic;
+    margin-bottom: 20px;
 }
 
 .hero-texto h1 {
     font-size: 64px;
     color: var(--azul-oscuro);
     line-height: 1.1;
-    /*controla el interlineado, Por defecto, los navegadores le ponen un interlineado de aproximadamente 1.4 o 1.5 a los textos*/
     margin-bottom: 30px;
+    /* Reduce el espacio entre líneas del título principal */
 }
 
 .hero-descripcion {
@@ -137,6 +143,7 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+/* Botones de acción */
 .hero-botones {
     display: flex;
     gap: 20px;
@@ -160,9 +167,9 @@ nav a:hover {
     border: 2px solid var(--gris-claro);
     border-radius: 10px;
     font-weight: bold;
-
 }
 
+/* Estadísticas destacadas */
 .hero-estadisticas {
     display: flex;
     gap: 70px;
@@ -184,7 +191,11 @@ nav a:hover {
     line-height: 1.5;
 }
 
-/*Funcionalidades*/
+/*========================================
+=           FUNCIONALIDADES              =
+========================================*/
+
+/* Sección de funcionalidades */
 .funcionalidades {
     width: 90%;
     max-width: 1200px;
@@ -198,22 +209,24 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.funcionalidades>p {
-    /*selector para aplicar estos estilos únicamente a los párrafos <p>*/
+.funcionalidades > p {
     font-size: 20px;
     color: var(--gris-medio);
     line-height: 1.7;
     max-width: 800px;
     margin: 0 auto 70px auto;
+    /* Aplica únicamente al párrafo principal de la sección */
 }
 
+/* Contenedor de tarjetas */
 .funcionalidades-cartas {
     display: flex;
     gap: 30px;
     align-items: stretch;
-    /*para dar la misma altura a todas las cards*/
+    /* Mantiene todas las tarjetas con la misma altura */
 }
 
+/* Tarjetas de funcionalidad */
 .funcionalidad {
     background-color: var(--blanco);
     padding: 40px 30px;
@@ -226,7 +239,6 @@ nav a:hover {
     font-size: 24px;
     color: var(--azul-oscuro);
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .funcionalidad p {
@@ -234,7 +246,10 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/*Modulos*/
+/*========================================
+=                MÓDULOS                =
+========================================*/
+
 .modulos {
     width: 90%;
     max-width: 1200px;
@@ -254,7 +269,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.modulos-texto>p {
+.modulos-texto > p {
     font-size: 20px;
     color: var(--gris-medio);
     line-height: 1.7;
@@ -294,20 +309,26 @@ nav a:hover {
     border-radius: 25px;
 }
 
-/*CTA Section*/
+/*========================================
+=                 CTA                    =
+========================================*/
+
+/* Sección de llamada a la acción */
 .cta {
     width: 90%;
     max-width: 1200px;
     margin: 140px auto;
-    background-color: var(--azul-oscuro);
-    border-radius: 30px;
     padding: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+
+    background-color: var(--azul-oscuro);
+    border-radius: 30px;
 }
 
+/* Contenido principal */
 .cta-texto {
     flex: 1;
 }
@@ -319,34 +340,37 @@ nav a:hover {
 }
 
 .cta-texto p {
-    color: var(--gris-claro);
     font-size: 20px;
+    color: var(--gris-claro);
     line-height: 1.6;
     margin-bottom: 35px;
 }
 
+/* Lista de beneficios */
 .cta-texto ul {
     list-style-position: inside;
 }
 
 .cta-texto li {
     color: var(--gris-claro);
-    margin-bottom: 18px;
     line-height: 1.6;
+    margin-bottom: 18px;
 }
 
+/* Tarjeta de acción */
 .cta-accion {
-    background-color: var(--blanco);
-    padding: 40px;
-    border-radius: 25px;
-    max-width: 350px;
     width: 100%;
+    max-width: 350px;
+    padding: 40px;
+
+    background-color: var(--blanco);
+    border-radius: 25px;
     text-align: center;
 }
 
 .cta-accion h2 {
-    color: var(--azul-oscuro);
     font-size: 32px;
+    color: var(--azul-oscuro);
     margin-bottom: 20px;
 }
 
@@ -356,26 +380,34 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+/* Botón principal del CTA */
 .boton-cta {
     display: inline-block;
+    padding: 15px 30px;
+
     background-color: var(--verde);
     color: var(--blanco);
     text-decoration: none;
-    padding: 15px 30px;
     border-radius: 10px;
     font-weight: bold;
 }
 
-/*Footer*/
+/*========================================
+=                FOOTER                  =
+========================================*/
+
+/* Pie de página */
 .footer {
     background-color: var(--azul-oscuro);
     padding: 40px 0 20px;
 }
 
+/* Contenido principal del footer */
 .footer-contenido {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+
     display: flex;
     justify-content: space-between;
     gap: 60px;
@@ -385,11 +417,13 @@ nav a:hover {
     flex: 1;
 }
 
+/* Marca */
 .footer-marca img {
     width: 180px;
     margin-bottom: 25px;
 }
 
+/* Textos generales */
 .footer p {
     color: var(--gris-claro);
     line-height: 1.7;
@@ -397,10 +431,11 @@ nav a:hover {
 
 .footer h3 {
     color: var(--blanco);
-    margin-bottom: 20px;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
+/* Lista de contacto */
 .footer ul {
     list-style: none;
 }
@@ -415,19 +450,27 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* Copyright */
 .footer-copy {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto 0;
     padding-top: 30px;
-    border-top: 1px solid var(--azul-claro);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    border-top: 1px solid var(--azul-claro);
     font-size: 14px;
 }
 
+/*========================================
+=            BOTÓN WHATSAPP              =
+========================================*/
+
+/* Botón flotante de WhatsApp */
 .btn-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -440,346 +483,398 @@ nav a:hover {
     height: auto;
 }
 
-/*Diseño responsivo para dispositivos móviles*/
+/*========================================
+=      RESPONSIVE - MÓVILES PEQUEÑOS     =
+========================================*/
+
 @media (max-width: 480px) {
 
-    /*Reducir el tamaño del logo para celulares*/
+    /*========================================
+    =                HEADER                  =
+    ========================================*/
+
+    /* Reducir el tamaño del logo */
     header img {
         width: 170px;
-        ;
     }
 
-    /*Permite reorganizar los elementos del header*/
+    /* Reorganizar elementos del encabezado */
     header section {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
 
-    /*Permite que el menú ocupe una fila completa*/
+    /* Permitir que el menú ocupe una fila completa */
     nav {
         width: 100%;
     }
 
-    /*Centra los enlaces del menú y elimina el espacio interno por defecto*/
+    /* Centrar enlaces del menú */
     nav ul {
         justify-content: center;
         gap: 18px;
         padding-left: 0;
     }
 
-    /*Reducir el tamaño de los enlaces del menú*/
+    /* Reducir tamaño de los enlaces */
     nav a {
         font-size: 13px;
     }
 
-    /*Reducir el tamaño del botón para celulares*/
+    /* Reducir tamaño del botón de acceso */
     .login {
         padding: 8px 12px;
     }
 
-    /*Organizar el Hero en una sola columna y reducir sus espacios*/
+    /*========================================
+    =                 HERO                   =
+    ========================================*/
+
+    /* Organizar Hero en una sola columna */
     .hero {
         flex-direction: column;
         margin: 40px auto;
         gap: 30px;
     }
 
-    /*Reducir el tamaño del título principal*/
+    /* Reducir tamaño del título principal */
     .hero-texto h1 {
         font-size: 36px;
     }
 
-    /*Reducir el tamaño de la descripción del Hero*/
+    /* Reducir tamaño de la descripción */
     .hero-descripcion {
         font-size: 16px;
     }
 
-    /*Organizar los botones del Hero en columna*/
+    /* Organizar botones en columna */
     .hero-botones {
         flex-direction: column;
+        margin-bottom: 30px;
     }
 
-    /*Organizar las estadísticas en columna*/
-    .hero-estadisticas {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    /*Permitir que las estadísticas ocupen todo el ancho*/
-    .estadistica {
-        width: 100%;
-    }
-
-    /*Reducir el ancho de la imagen principal y centrarla*/
-    .hero-imagen {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /*Reducir el tamaño de los botones del Hero en celulares*/
+    /* Reducir tamaño de los botones */
     .boton-primario,
     .boton-secundario {
         padding: 12px 20px;
     }
 
-    /*Reducir la separación entre botones y estadísticas*/
-    .hero-botones {
-        margin-bottom: 30px;
+    /* Organizar estadísticas en columna */
+    .hero-estadisticas {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    /*Reducir el tamaño de los títulos de estadísticas*/
+    /* Permitir ancho completo de las estadísticas */
+    .estadistica {
+        width: 100%;
+    }
+
+    /* Reducir tamaño de títulos de estadísticas */
     .estadistica strong {
         font-size: 20px;
     }
 
     .estadistica p {
-        line-height: 1.5;
         font-size: 15px;
+        line-height: 1.5;
     }
 
-    /*Organizar las funcionalidades en una sola columna*/
+    /* Centrar imagen principal */
+    .hero-imagen {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*========================================
+    =           FUNCIONALIDADES              =
+    ========================================*/
+
+    /* Organizar tarjetas en columna */
     .funcionalidades-cartas {
         flex-direction: column;
         gap: 20px;
     }
 
-    /*Reducir el tamaño del título de funcionalidades*/
-    .funcionalidades h2 {
-        font-size: 36px;
-    }
-
-    /*Reducir el tamaño de la descripción de funcionalidades*/
-    .funcionalidades>p {
-        font-size: 16px;
-    }
-
-    /*Reducir el espacio exterior de la sección*/
+    /* Reducir espacios exteriores */
     .funcionalidades {
         margin: 80px auto;
     }
 
-    /*Reducir el espacio interno de las tarjetas*/
+    /* Reducir tamaño del título */
+    .funcionalidades h2 {
+        font-size: 36px;
+    }
+
+    /* Reducir tamaño de la descripción */
+    .funcionalidades>p {
+        font-size: 16px;
+    }
+
+    /* Reducir espacio interno de tarjetas */
     .funcionalidad {
         padding: 30px 20px;
     }
 
-    /*Reducir el tamaño de los títulos de las tarjetas*/
+    /* Reducir tamaño de títulos */
     .funcionalidad h3 {
         font-size: 22px;
     }
 
-    /*Organizar los módulos en una sola columna*/
+    /*========================================
+    =                MÓDULOS                =
+    ========================================*/
+
+    /* Organizar módulos en columna */
     .modulos {
         flex-direction: column;
         gap: 40px;
         margin: 80px auto;
     }
 
-    /*Reducir el tamaño del título de módulos*/
+    /* Reducir tamaño del título */
     .modulos-texto h2 {
         font-size: 32px;
     }
 
-    /*Reducir el tamaño de la descripción de módulos*/
+    /* Reducir tamaño de la descripción */
     .modulos-texto>p {
         font-size: 16px;
         margin-bottom: 30px;
     }
 
-    /*Reducir el espacio interno de los módulos*/
+    /* Reducir espacio interno */
     .modulo {
         padding: 25px 20px;
     }
 
-    /*Reducir el tamaño de los títulos de módulos*/
+    /* Reducir tamaño de títulos */
     .modulo h3 {
         font-size: 22px;
     }
 
-    /*Reducir el ancho de la imagen de módulos y centrarla*/
+    /* Centrar imagen */
     .modulos-manual {
         width: 90%;
         margin: 0 auto;
     }
 
-    /*Organizar CTA en una sola columna*/
+    /*========================================
+    =                  CTA                   =
+    ========================================*/
+
+    /* Organizar CTA en columna */
     .cta {
         flex-direction: column;
         gap: 30px;
+        padding: 40px 25px;
+        margin: 80px auto;
     }
 
-    /*Reducir el tamaño del título CTA*/
+    /* Reducir tamaño del título */
     .cta-texto h2 {
         font-size: 36px;
         line-height: 1.2;
     }
 
-    /*Reducir el tamaño de la descripción CTA*/
+    /* Reducir tamaño de descripción */
     .cta-texto p {
         font-size: 16px;
     }
 
-    /*Reducir el tamaño de la lista CTA*/
+    /* Reducir tamaño de la lista */
     .cta-texto li {
         font-size: 15px;
         line-height: 1.6;
     }
 
-    /*Eliminar restricciones de ancho heredadas*/
+    /* Eliminar restricciones de ancho */
     .cta-accion {
         max-width: 100%;
     }
 
-    /*Permitir que los bloques CTA ocupen todo el ancho*/
     .cta-texto,
     .cta-accion {
         width: 100%;
         max-width: 100%;
     }
 
-    /*Reducir el espacio interno del CTA*/
-    .cta {
-        padding: 40px 25px;
-    }
+    /*========================================
+    =                FOOTER                  =
+    ========================================*/
 
-    /*Reducir el margen exterior del CTA*/
-    .cta {
-        margin: 80px auto;
-    }
-
-    /*Organizar el contenido del footer en una sola columna*/
+    /* Organizar contenido en columna */
     .footer-contenido {
         flex-direction: column;
         gap: 30px;
     }
 
-    /*Reducir el tamaño del logo del footer*/
+    /* Reducir tamaño del logo */
     .footer-marca img {
         width: 150px;
     }
 
-    /*Reducir el tamaño de los títulos del footer*/
+    /* Reducir tamaño de títulos */
     .footer h3 {
         font-size: 20px;
     }
 
-    /*Organizar el copyright en una sola columna*/
+    /* Organizar copyright en columna */
     .footer-copy {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
 
-    /*Reducir el tamaño del texto del copyright*/
+    /* Reducir tamaño del texto */
     .footer-copy p {
         font-size: 13px;
     }
 
 }
 
-/*Diseño para celulares de pantalla grande*/
+/*========================================
+=      RESPONSIVE - CELULARES GRANDES    =
+========================================*/
+
 @media (min-width: 481px) and (max-width: 767px) {
 
-    /*Header*/
+    /*========================================
+    =                HEADER                  =
+    ========================================*/
+
+    /* Ajustar tamaño del logo */
     header img {
         width: 190px;
     }
 
+    /* Reorganizar elementos del encabezado */
     header section {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
 
+    /* Permitir que el menú ocupe una fila completa */
     nav {
         width: 100%;
     }
 
+    /* Centrar enlaces del menú */
     nav ul {
         justify-content: center;
         gap: 25px;
         padding-left: 0;
     }
 
+    /* Ajustar tamaño de los enlaces */
     nav a {
         font-size: 15px;
     }
 
+    /* Ajustar tamaño del botón */
     .login {
         padding: 10px 18px;
     }
 
-    /*Hero*/
+    /*========================================
+    =                 HERO                   =
+    ========================================*/
+
+    /* Organizar Hero en columna */
     .hero {
         flex-direction: column;
         margin: 60px auto;
         gap: 40px;
     }
 
+    /* Ajustar tamaño del título */
     .hero-texto h1 {
         font-size: 52px;
     }
 
+    /* Ajustar tamaño de la descripción */
     .hero-descripcion {
         font-size: 18px;
     }
 
+    /* Organizar botones en fila adaptable */
     .hero-botones {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
     }
 
+    /* Centrar estadísticas */
     .hero-estadisticas {
-        gap: 40px;
         justify-content: center;
+        gap: 40px;
     }
 
+    /* Centrar imagen principal */
     .hero-imagen {
         width: 80%;
         margin: 0 auto;
     }
 
-    /*Funcionalidades*/
+    /*========================================
+    =           FUNCIONALIDADES              =
+    ========================================*/
+
+    /* Ajustar espacio exterior */
     .funcionalidades {
         margin: 100px auto;
     }
 
+    /* Ajustar tamaño del título */
     .funcionalidades h2 {
         font-size: 42px;
     }
 
-    .funcionalidades > p {
+    /* Ajustar tamaño de la descripción */
+    .funcionalidades>p {
         font-size: 18px;
     }
 
+    /* Organizar tarjetas en columna */
     .funcionalidades-cartas {
         flex-direction: column;
         gap: 25px;
     }
 
-    /*Módulos*/
+    /*========================================
+    =                MÓDULOS                =
+    ========================================*/
+
+    /* Organizar módulos en columna */
     .modulos {
         flex-direction: column;
         gap: 50px;
         margin: 100px auto;
     }
 
+    /* Ajustar tamaño del título */
     .modulos-texto h2 {
         font-size: 42px;
     }
 
-    .modulos-texto > p {
+    /* Ajustar tamaño de la descripción */
+    .modulos-texto>p {
         font-size: 18px;
     }
 
+    /* Centrar imagen */
     .modulos-manual {
         width: 80%;
         margin: 0 auto;
     }
 
-    /*CTA*/
+    /*========================================
+    =                  CTA                   =
+    ========================================*/
+
+    /* Organizar CTA en columna */
     .cta {
         flex-direction: column;
         gap: 40px;
@@ -787,114 +882,162 @@ nav a:hover {
         margin: 100px auto;
     }
 
+    /* Ajustar tamaño del título */
     .cta-texto h2 {
         font-size: 42px;
     }
 
+    /* Permitir ancho completo */
     .cta-texto,
     .cta-accion {
         width: 100%;
         max-width: 100%;
     }
 
-    /*Footer*/
+    /*========================================
+    =                FOOTER                  =
+    ========================================*/
+
+    /* Organizar contenido en columna */
     .footer-contenido {
         flex-direction: column;
         gap: 35px;
     }
 
+    /* Organizar copyright en columna */
     .footer-copy {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
+
 }
 
-/*Diseño para tablets*/
+/*========================================
+=          RESPONSIVE - TABLETS          =
+========================================*/
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    /*Header*/
+    /*========================================
+    =                HEADER                  =
+    ========================================*/
+
+    /* Ajustar ancho del contenedor */
     header section {
         width: 95%;
     }
 
+    /* Ajustar separación del menú */
     nav ul {
         gap: 25px;
     }
 
-    /*Hero*/
+    /*========================================
+    =                 HERO                   =
+    ========================================*/
+
+    /* Ajustar distribución del Hero */
     .hero {
         gap: 40px;
         align-items: center;
     }
 
+    /* Ajustar tamaño del título */
     .hero-texto h1 {
         font-size: 54px;
     }
 
+    /* Ajustar tamaño de la descripción */
     .hero-descripcion {
         font-size: 18px;
     }
 
+    /* Reducir separación entre botones */
     .hero-botones {
         gap: 15px;
     }
 
+    /* Reducir separación entre estadísticas */
     .hero-estadisticas {
         gap: 30px;
     }
 
+    /* Reducir ancho de cada estadística */
     .estadistica {
         width: 120px;
     }
 
-    /*Imagen principal*/
+    /* Ajustar imagen principal */
     .hero-imagen img {
         width: 100%;
     }
 
-    /*Funcionalidades*/
+    /*========================================
+    =           FUNCIONALIDADES              =
+    ========================================*/
+
+    /* Ajustar tamaño del título */
     .funcionalidades h2 {
         font-size: 48px;
     }
 
+    /* Reducir separación entre tarjetas */
     .funcionalidades-cartas {
         gap: 20px;
     }
 
+    /* Ajustar espacio interno */
     .funcionalidad {
         padding: 35px 25px;
     }
 
-    /*Módulos*/
+    /*========================================
+    =                MÓDULOS                =
+    ========================================*/
+
+    /* Ajustar separación entre columnas */
     .modulos {
         gap: 50px;
     }
 
+    /* Ajustar tamaño del título */
     .modulos-texto h2 {
         font-size: 46px;
     }
 
+    /* Ajustar espacio interno */
     .modulo {
         padding: 25px;
     }
 
-    /*CTA*/
+    /*========================================
+    =                  CTA                   =
+    ========================================*/
+
+    /* Ajustar espacios internos */
     .cta {
         padding: 60px 40px;
         gap: 40px;
     }
 
+    /* Ajustar tamaño del título */
     .cta-texto h2 {
         font-size: 46px;
     }
 
+    /* Reducir ancho de la tarjeta lateral */
     .cta-accion {
         max-width: 300px;
     }
 
-    /*Footer*/
+    /*========================================
+    =                FOOTER                  =
+    ========================================*/
+
+    /* Ajustar separación entre columnas */
     .footer-contenido {
         gap: 40px;
     }
+
 }
