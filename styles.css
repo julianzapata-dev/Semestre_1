@@ -442,7 +442,8 @@ header img {
 
     /*Reducir el tamaño del logo para celulares*/
     header img {
-        width: 140px;
+        width: 170px;
+        ;
     }
 
     /*Permite reorganizar los elementos del header*/
@@ -460,7 +461,7 @@ header img {
     /*Centra los enlaces del menú y elimina el espacio interno por defecto*/
     nav ul {
         justify-content: center;
-        gap: 10px;
+        gap: 18px;
         padding-left: 0;
     }
 
@@ -532,6 +533,118 @@ header img {
     .estadistica p {
         line-height: 1.5;
         font-size: 15px;
+    }
+
+    /*Organizar las funcionalidades en una sola columna*/
+    .funcionalidades-cartas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*Reducir el tamaño del título de funcionalidades*/
+    .funcionalidades h2 {
+        font-size: 36px;
+    }
+
+    /*Reducir el tamaño de la descripción de funcionalidades*/
+    .funcionalidades>p {
+        font-size: 16px;
+    }
+
+    /*Reducir el espacio exterior de la sección*/
+    .funcionalidades {
+        margin: 80px auto;
+    }
+
+    /*Reducir el espacio interno de las tarjetas*/
+    .funcionalidad {
+        padding: 30px 20px;
+    }
+
+    /*Reducir el tamaño de los títulos de las tarjetas*/
+    .funcionalidad h3 {
+        font-size: 22px;
+    }
+
+    /*Organizar los módulos en una sola columna*/
+    .modulos {
+        flex-direction: column;
+        gap: 40px;
+        margin: 80px auto;
+    }
+
+    /*Reducir el tamaño del título de módulos*/
+    .modulos-texto h2 {
+        font-size: 32px;
+    }
+
+    /*Reducir el tamaño de la descripción de módulos*/
+    .modulos-texto>p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    /*Reducir el espacio interno de los módulos*/
+    .modulo {
+        padding: 25px 20px;
+    }
+
+    /*Reducir el tamaño de los títulos de módulos*/
+    .modulo h3 {
+        font-size: 22px;
+    }
+
+    /*Reducir el ancho de la imagen de módulos y centrarla*/
+    .modulos-manual {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*Organizar CTA en una sola columna*/
+    .cta {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /*Reducir el tamaño del título CTA*/
+    .cta-texto h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    /*Reducir el tamaño de la descripción CTA*/
+    .cta-texto p {
+        font-size: 16px;
+    }
+
+    /*Reducir el tamaño de la lista CTA*/
+    .cta-texto li {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /*Eliminar restricciones de ancho heredadas*/
+    .cta-accion {
+        max-width: 100%;
+    }
+
+    /*Permitir que los bloques CTA ocupen todo el ancho*/
+    .cta-texto,
+    .cta-accion {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /*Reducir el espacio interno del CTA*/
+    .cta {
+        padding: 40px 25px;
+    }
+
+
+
+    /*Reducir el margen exterior del CTA*/
+    .cta {
+        margin: 80px auto;
     }
 
 }
