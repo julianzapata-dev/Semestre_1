@@ -108,6 +108,7 @@ header img {
 .hero-imagen img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .hero-slogan {
@@ -451,14 +452,21 @@ header img {
         gap: 15px;
     }
 
-    /*Reducir la separación entre enlaces del menú*/
+    /*Permite que el menú ocupe una fila completa*/
+    nav {
+        width: 100%;
+    }
+
+    /*Centra los enlaces del menú y elimina el espacio interno por defecto*/
     nav ul {
-        gap: 15px;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 0;
     }
 
     /*Reducir el tamaño de los enlaces del menú*/
     nav a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     /*Reducir el tamaño del botón para celulares*/
@@ -466,43 +474,64 @@ header img {
         padding: 8px 12px;
     }
 
-    /*Permite que el menú ocupe una fila completa*/
-    nav {
-        width: 100%;
-    }
-
-    /*Centra los enlaces del menú*/
-    nav ul {
-        justify-content: center;
-
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    nav ul {
-        justify-content: center;
-        padding-left: 0;
+    /*Organizar el Hero en una sola columna y reducir sus espacios*/
+    .hero {
+        flex-direction: column;
+        margin: 40px auto;
+        gap: 30px;
     }
 
     /*Reducir el tamaño del título principal*/
     .hero-texto h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
-    /*Organizar el Hero en una sola columna*/
-    .hero {
+    /*Reducir el tamaño de la descripción del Hero*/
+    .hero-descripcion {
+        font-size: 16px;
+    }
+
+    /*Organizar los botones del Hero en columna*/
+    .hero-botones {
         flex-direction: column;
     }
 
-    /*Reducir los espacios del Hero en celulares*/
-    .hero {
-        margin: 40px auto;
-        gap: 30px;
+    /*Organizar las estadísticas en columna*/
+    .hero-estadisticas {
+        flex-direction: column;
+        gap: 20px;
     }
+
+    /*Permitir que las estadísticas ocupen todo el ancho*/
+    .estadistica {
+        width: 100%;
+    }
+
+    /*Reducir el ancho de la imagen principal y centrarla*/
+    .hero-imagen {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*Reducir el tamaño de los botones del Hero en celulares*/
+    .boton-primario,
+    .boton-secundario {
+        padding: 12px 20px;
+    }
+
+    /*Reducir la separación entre botones y estadísticas*/
+    .hero-botones {
+        margin-bottom: 30px;
+    }
+
+    /*Reducir el tamaño de los títulos de estadísticas*/
+    .estadistica strong {
+        font-size: 20px;
+    }
+
+    .estadistica p {
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
 }
