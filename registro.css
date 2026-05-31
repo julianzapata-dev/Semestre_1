@@ -1,4 +1,3 @@
-
 /*----------------- Hoja de estilos de la página de registro. Reutiliza algunos estilos del index, como el encabezado y el pie de página.-----------------*/
 
 :root {
@@ -113,7 +112,8 @@ header img {
     background-color: #fcfcfc;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);/*Agregar una leve sombra a la tarjeta*/
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    /*Agregar una leve sombra a la tarjeta*/
     border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
@@ -243,7 +243,6 @@ select {
     /* Ajusta el tamaño del botón de inicio de sesión para optimizar el espacio disponible */
     .login {
         padding: 8px 12px;
-        font-size: 12px;
     }
 
     /* Panel izquierdo */
@@ -273,5 +272,10 @@ select {
     /* Disminuye el tamaño del título del formulario para adaptarlo a dispositivos móviles */
     .registro-formulario h2 {
         font-size: 36px;
+    }
+
+    nav ul {
+        justify-content: center;
+        padding-left: 0;
     }
 }
