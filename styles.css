@@ -1,4 +1,4 @@
-/*Variables de color*/
+/* Paleta de colores principal del proyecto */
 :root {
     --azul-oscuro: #0b1f3a;
     --azul-claro: #5bc0eb;
@@ -10,24 +10,29 @@
     --blanco: #ffffff;
 }
 
-/*Reset general (así evitamos estilos propios de los navegadores)*/
+/*========================================
+=             ESTILOS GENERALES          =
+========================================*/
+
+/* Reset general para evitar estilos por defecto del navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Estilo en general, para el cuerpo de la página*/
+/* Estilos generales del sitio */
 body {
     background-color: var(--gris-fondo);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--gris-oscuro);
 }
 
-/* ========================= Diseño página principal: index ========================= */
+/*========================================
+=          PÁGINA PRINCIPAL: INDEX       =
+========================================*/
 
-
-/* Header*/
+/* Header */
 header {
     background-color: var(--blanco);
     border-bottom: 1px solid var(--gris-claro);
@@ -35,7 +40,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    /*asegura que el encabezado esté en una capa superior tridimensional. Cuando el usuario baje la página, el contenido pasará por debajo del encabezado*/
+    /* Mantiene el encabezado visible al desplazarse */
 }
 
 header section {
@@ -43,29 +48,36 @@ header section {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    /*todos los elementos que estén adentro del header, se van a colocar uno al lado del otro en una fila*/
     justify-content: space-between;
-    /*controla la alineación horizontal, empuja los elementos hacia los extremos:*/
     align-items: center;
-    /*controla la alineación vertical.Le dice a todos los elementos que se alineen justo en el centro del contenedor*/
+    /* Distribuye los elementos horizontalmente y los centra verticalmente */
 }
 
+header img {
+    width: 180px;
+    height: auto;
+}
+
+/* Navegación principal */
 nav ul {
     display: flex;
     gap: 40px;
-    /*Sirve para separar los elementos de la lista, en este caso con 40px de espacio*/
     list-style: none;
-    /*oculta las viñetas*/
+    /* Elimina las viñetas de la lista */
 }
 
 nav a {
     text-decoration: none;
-    /*elimina las linea de los enlaces*/
     color: var(--gris-oscuro);
     font-size: 16px;
     font-weight: 500;
 }
 
+nav a:hover {
+    color: var(--azul-claro);
+}
+
+/* Botón de inicio de sesión */
 .login {
     background-color: var(--azul-claro);
     color: var(--blanco);
@@ -73,15 +85,6 @@ nav a {
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--azul-claro);
-}
-
-header img {
-    width: 180px;
-    height: auto;
 }
 
 /*Página index: Main*/
@@ -640,11 +643,258 @@ header img {
         padding: 40px 25px;
     }
 
-
-
     /*Reducir el margen exterior del CTA*/
     .cta {
         margin: 80px auto;
     }
 
+    /*Organizar el contenido del footer en una sola columna*/
+    .footer-contenido {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /*Reducir el tamaño del logo del footer*/
+    .footer-marca img {
+        width: 150px;
+    }
+
+    /*Reducir el tamaño de los títulos del footer*/
+    .footer h3 {
+        font-size: 20px;
+    }
+
+    /*Organizar el copyright en una sola columna*/
+    .footer-copy {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /*Reducir el tamaño del texto del copyright*/
+    .footer-copy p {
+        font-size: 13px;
+    }
+
+}
+
+/*Diseño para celulares de pantalla grande*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /*Header*/
+    header img {
+        width: 190px;
+    }
+
+    header section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 25px;
+        padding-left: 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .login {
+        padding: 10px 18px;
+    }
+
+    /*Hero*/
+    .hero {
+        flex-direction: column;
+        margin: 60px auto;
+        gap: 40px;
+    }
+
+    .hero-texto h1 {
+        font-size: 52px;
+    }
+
+    .hero-descripcion {
+        font-size: 18px;
+    }
+
+    .hero-botones {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-estadisticas {
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .hero-imagen {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*Funcionalidades*/
+    .funcionalidades {
+        margin: 100px auto;
+    }
+
+    .funcionalidades h2 {
+        font-size: 42px;
+    }
+
+    .funcionalidades > p {
+        font-size: 18px;
+    }
+
+    .funcionalidades-cartas {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /*Módulos*/
+    .modulos {
+        flex-direction: column;
+        gap: 50px;
+        margin: 100px auto;
+    }
+
+    .modulos-texto h2 {
+        font-size: 42px;
+    }
+
+    .modulos-texto > p {
+        font-size: 18px;
+    }
+
+    .modulos-manual {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*CTA*/
+    .cta {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 40px;
+        margin: 100px auto;
+    }
+
+    .cta-texto h2 {
+        font-size: 42px;
+    }
+
+    .cta-texto,
+    .cta-accion {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /*Footer*/
+    .footer-contenido {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-copy {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/*Diseño para tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*Header*/
+    header section {
+        width: 95%;
+    }
+
+    nav ul {
+        gap: 25px;
+    }
+
+    /*Hero*/
+    .hero {
+        gap: 40px;
+        align-items: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 54px;
+    }
+
+    .hero-descripcion {
+        font-size: 18px;
+    }
+
+    .hero-botones {
+        gap: 15px;
+    }
+
+    .hero-estadisticas {
+        gap: 30px;
+    }
+
+    .estadistica {
+        width: 120px;
+    }
+
+    /*Imagen principal*/
+    .hero-imagen img {
+        width: 100%;
+    }
+
+    /*Funcionalidades*/
+    .funcionalidades h2 {
+        font-size: 48px;
+    }
+
+    .funcionalidades-cartas {
+        gap: 20px;
+    }
+
+    .funcionalidad {
+        padding: 35px 25px;
+    }
+
+    /*Módulos*/
+    .modulos {
+        gap: 50px;
+    }
+
+    .modulos-texto h2 {
+        font-size: 46px;
+    }
+
+    .modulo {
+        padding: 25px;
+    }
+
+    /*CTA*/
+    .cta {
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .cta-texto h2 {
+        font-size: 46px;
+    }
+
+    .cta-accion {
+        max-width: 300px;
+    }
+
+    /*Footer*/
+    .footer-contenido {
+        gap: 40px;
+    }
 }
