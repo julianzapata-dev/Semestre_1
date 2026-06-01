@@ -145,6 +145,7 @@ nav a:hover {
     max-width: 1200px;
     margin: 120px auto;
 }
+
 .compromiso-contenido {
     display: flex;
     gap: 30px;
@@ -186,3 +187,99 @@ nav a:hover {
     font-size: 18px;
 }
 
+/*========================================
+=                VALORES                 =
+========================================*/
+
+.valores {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+.valor {
+    text-align: center;
+}
+
+.valor img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.valor h3 {
+    font-size: 24px;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+.valor p {
+    color: var(--gris-medio);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.valor i {
+    font-size: 40px;
+    color: var(--azul-claro);
+    margin-bottom: 25px;
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--blanco);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 25px auto;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/*========================================
+=          PROBLEMA A RESOLVER           =
+========================================*/
+
+/* Contenedor principal */
+.problema {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+/* Imagen */
+.problema-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Título */
+.problema-texto h2 {
+    font-size: 48px;
+    color: var(--azul-oscuro);
+    margin-bottom: 25px;
+}
+
+/* Descripción principal */
+.problema-texto>p {
+    font-size: 20px;
+    color: var(--gris-medio);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Lista */
+.problema-texto ul {
+    padding-left: 25px;
+}
+
+/* Elementos de la lista */
+.problema-texto li {
+    font-size: 18px;
+    color: var(--gris-oscuro);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
