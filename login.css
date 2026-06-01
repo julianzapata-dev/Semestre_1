@@ -23,36 +23,37 @@ body {
     color: var(--gris-oscuro);
 }
 
-/*Header*/
+/*========================================
+=                HEADER                  =
+========================================*/
+
 header {
     background-color: var(--blanco);
     border-bottom: 1px solid var(--gris-claro);
-    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-header section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+    padding: 20px 0;
+    background-color: var(--blanco);
 }
 
-nav ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
+.navbar-brand img {
+    width: 180px;
+    height: auto;
 }
 
-nav a {
-    text-decoration: none;
+.nav-link {
     color: var(--gris-oscuro);
     font-size: 16px;
     font-weight: 500;
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: var(--azul-claro);
 }
 
 .login {
@@ -68,13 +69,12 @@ nav a {
     opacity: 0.8;
 }
 
-nav a:hover {
-    color: var(--azul-claro);
+.navbar-toggler {
+    border: 2px solid var(--gris-medio);
 }
 
-header img {
-    width: 180px;
-    height: auto;
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 label {
@@ -210,40 +210,14 @@ select:focus {
 /*Diseño responsivo para dispositivos móviles*/
 @media (max-width: 480px) {
 
-    /*Reducir el tamaño del logo para celulares*/
-    header img {
-        width: 140px;
-    }
-
-    /*Permite reorganizar los elementos del header*/
-    header section {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    /*Reducir el tamaño del título en celulares*/
-    .login-info h1 {
-        font-size: 42px;
-    }
-
-    .login {
-        padding: 8px 12px;
-    }
-
-    /*Reducir la separación interna del panel azul*/
     .login-info {
         padding: 40px;
     }
 
-    /*Reducir la separación entre enlaces del menú*/
-    nav ul {
-        gap: 15px;
+    .login-info h1 {
+        font-size: 42px;
     }
 
-    nav a {
-        font-size: 14px;
-    }
 
     /*Reducir el espacio interno del formulario*/
     .login-formulario {
@@ -258,11 +232,6 @@ select:focus {
     /*Reducir el tamaño del texto descriptivo del panel azul*/
     .login-info p {
         font-size: 16px;
-    }
-
-    nav ul {
-        justify-content: center;
-        padding-left: 0;
     }
 
 }

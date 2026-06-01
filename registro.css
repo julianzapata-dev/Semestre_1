@@ -23,39 +23,36 @@ body {
     color: var(--gris-oscuro);
 }
 
-/* Header */
+/*========================================
+=                HEADER                  =
+========================================*/
+
 header {
     background-color: var(--blanco);
     border-bottom: 1px solid var(--gris-claro);
-    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-header section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+    padding: 20px 0;
+    background-color: var(--blanco);
 }
 
-nav ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
+.navbar-brand img {
+    width: 180px;
+    height: auto;
 }
 
-nav a {
-    text-decoration: none;
+.nav-link {
     color: var(--gris-oscuro);
     font-size: 16px;
     font-weight: 500;
+    margin: 0 15px;
 }
 
-nav a:hover {
+.nav-link:hover {
     color: var(--azul-claro);
 }
 
@@ -72,9 +69,12 @@ nav a:hover {
     opacity: 0.8;
 }
 
-header img {
-    width: 180px;
-    height: auto;
+.navbar-toggler {
+    border: 2px solid var(--gris-medio);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /*Panel izquierdo*/
@@ -222,36 +222,6 @@ select {
 
 @media (max-width: 480px) {
 
-
-    /*---Header---*/
-
-    /* Reduce el tamaño del logo para adaptarlo a pantallas pequeñas */
-    header img {
-        width: 140px;
-    }
-
-    /* Permite que los elementos del encabezado se acomoden en varias líneas si es necesario */
-    header section {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    /* Disminuye la separación entre las opciones del menú de navegación */
-    nav ul {
-        gap: 15px;
-    }
-
-    /* Reduce el tamaño del texto de los enlaces para mejorar la visualización en móviles */
-    nav a {
-        font-size: 14px;
-    }
-
-    /* Ajusta el tamaño del botón de inicio de sesión para optimizar el espacio disponible */
-    .login {
-        padding: 8px 12px;
-    }
-
     /* Panel izquierdo */
 
     /* Reduce el espacio interno para aprovechar mejor el ancho en dispositivos móviles */
@@ -279,10 +249,5 @@ select {
     /* Disminuye el tamaño del título del formulario para adaptarlo a dispositivos móviles */
     .registro-formulario h2 {
         font-size: 36px;
-    }
-
-    nav ul {
-        justify-content: center;
-        padding-left: 0;
     }
 }

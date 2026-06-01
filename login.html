@@ -16,25 +16,44 @@
 
     <!-- Header -->
     <header>
-        <section>
-            <a href="index.html#inicio">
-                <img src="Imagenes/logo-facturate.png" alt="Logo de Facturate">
-            </a>
-            <nav aria-label="Navegación principal">
-                <ul>
-                    <li>
-                        <a href="index.html#inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="index.html#funcionalidades">Funcionalidades</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-            </nav>
-            <a class="login" href="registro.html">Crear cuenta</a>
-        </section>
+
+        <nav class="navbar navbar-expand-lg">
+
+            <section class="container">
+
+                <a class="navbar-brand" href="index.html#inicio">
+                    <img src="Imagenes/logo-facturate.png" alt="Logo de Facturate">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuFacturate">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="menuFacturate">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#funcionalidades">Funcionalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <!-- Visible solo en móviles -->
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="registro.html">Crear cuenta</a>
+                        </li>
+                    </ul>
+
+                    <!-- Visible solo en escritorio -->
+                    <a class="login d-none d-lg-inline-block" href="registro.html">
+                        Crear cuenta
+                    </a>
+
+                </section>
+
+            </section>
+
+        </nav>
     </header>
 
     <!-- Main -->
@@ -93,6 +112,8 @@
         <p>Proyecto Integrador CESDE</p>
         <p>Sistema de Recaudo Digital</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

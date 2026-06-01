@@ -34,52 +34,39 @@ body {
 =          PÁGINA PRINCIPAL: INDEX       =
 ========================================*/
 
-/* Header */
+/*========================================
+=                HEADER                  =
+========================================*/
+
 header {
     background-color: var(--blanco);
     border-bottom: 1px solid var(--gris-claro);
-    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* Mantiene el encabezado visible al desplazarse */
 }
 
-header section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* Distribuye los elementos horizontalmente y los centra verticalmente */
+.navbar {
+    padding: 20px 0;
+    background-color: var(--blanco);
 }
 
-header img {
+.navbar-brand img {
     width: 180px;
     height: auto;
 }
 
-/* Navegación principal */
-nav ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    /* Elimina las viñetas de la lista */
-}
-
-nav a {
-    text-decoration: none;
+.nav-link {
     color: var(--gris-oscuro);
     font-size: 16px;
     font-weight: 500;
+    margin: 0 15px;
 }
 
-nav a:hover {
+.nav-link:hover {
     color: var(--azul-claro);
 }
 
-/* Botón de inicio de sesión */
 .login {
     background-color: var(--azul-claro);
     color: var(--blanco);
@@ -89,10 +76,17 @@ nav a:hover {
     font-weight: bold;
 }
 
+.navbar-toggler {
+    border: 2px solid var(--gris-medio);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .login:hover {
     opacity: 0.8;
 }
-
 
 /*========================================
 =                 HERO                   =
@@ -179,6 +173,11 @@ nav a:hover {
     border: 2px solid var(--gris-claro);
     border-radius: 10px;
     font-weight: bold;
+}
+
+.boton-secundario:hover {
+    opacity: 0.8;
+    border-color: var(--gris-medio);
 }
 
 /* Estadísticas destacadas */
@@ -507,44 +506,6 @@ nav a:hover {
 @media (max-width: 480px) {
 
     /*========================================
-    =                HEADER                  =
-    ========================================*/
-
-    /* Reducir el tamaño del logo */
-    header img {
-        width: 170px;
-    }
-
-    /* Reorganizar elementos del encabezado */
-    header section {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    /* Permitir que el menú ocupe una fila completa */
-    nav {
-        width: 100%;
-    }
-
-    /* Centrar enlaces del menú */
-    nav ul {
-        justify-content: center;
-        gap: 18px;
-        padding-left: 0;
-    }
-
-    /* Reducir tamaño de los enlaces */
-    nav a {
-        font-size: 13px;
-    }
-
-    /* Reducir tamaño del botón de acceso */
-    .login {
-        padding: 8px 12px;
-    }
-
-    /*========================================
     =                 HERO                   =
     ========================================*/
 
@@ -758,44 +719,6 @@ nav a:hover {
 @media (min-width: 481px) and (max-width: 767px) {
 
     /*========================================
-    =                HEADER                  =
-    ========================================*/
-
-    /* Ajustar tamaño del logo */
-    header img {
-        width: 190px;
-    }
-
-    /* Reorganizar elementos del encabezado */
-    header section {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    /* Permitir que el menú ocupe una fila completa */
-    nav {
-        width: 100%;
-    }
-
-    /* Centrar enlaces del menú */
-    nav ul {
-        justify-content: center;
-        gap: 25px;
-        padding-left: 0;
-    }
-
-    /* Ajustar tamaño de los enlaces */
-    nav a {
-        font-size: 15px;
-    }
-
-    /* Ajustar tamaño del botón */
-    .login {
-        padding: 10px 18px;
-    }
-
-    /*========================================
     =                 HERO                   =
     ========================================*/
 
@@ -935,20 +858,6 @@ nav a:hover {
 ========================================*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    /*========================================
-    =                HEADER                  =
-    ========================================*/
-
-    /* Ajustar ancho del contenedor */
-    header section {
-        width: 95%;
-    }
-
-    /* Ajustar separación del menú */
-    nav ul {
-        gap: 25px;
-    }
 
     /*========================================
     =                 HERO                   =
