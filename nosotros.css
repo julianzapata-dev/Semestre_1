@@ -283,3 +283,267 @@ nav a:hover {
     line-height: 1.8;
     margin-bottom: 10px;
 }
+
+/*========================================
+=        BENEFICIOS FACTURATE            =
+========================================*/
+
+/* Contenedor principal */
+.beneficios {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+/* Título */
+.beneficios h2 {
+    font-size: 48px;
+    color: var(--azul-oscuro);
+    margin-bottom: 25px;
+}
+
+/* Texto principal */
+.beneficios>p {
+    font-size: 20px;
+    color: var(--gris-medio);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 70px auto;
+}
+
+/* Contenedor de tarjetas */
+.beneficios-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Tarjetas */
+.beneficio {
+    flex: 1 1 350px;
+    background-color: var(--blanco);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.beneficio img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.beneficio h3 {
+    font-size: 24px;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+.beneficio p {
+    color: var(--gris-medio);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/*========================================
+=         ENFOQUE ESTRATÉGICO            =
+========================================*/
+
+/* Contenedor principal */
+.enfoque {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+/* Título */
+.enfoque h2 {
+    font-size: 48px;
+    color: var(--azul-oscuro);
+    margin-bottom: 25px;
+}
+
+/* Texto introductorio */
+.enfoque>p {
+    font-size: 20px;
+    color: var(--gris-medio);
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto 70px auto;
+}
+
+/* Contenedor de tarjetas */
+.enfoque-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Tarjetas */
+.enfoque-item {
+    flex: 1 1 250px;
+    background-color: var(--blanco);
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Título de tarjeta */
+.enfoque-item h3 {
+    font-size: 24px;
+    color: var(--azul-oscuro);
+    margin-bottom: 15px;
+}
+
+/* Texto */
+.enfoque-item p {
+    font-size: 18px;
+    color: var(--gris-medio);
+    line-height: 1.7;
+}
+
+/*========================================
+=                 CTA                    =
+========================================*/
+
+/* Contenedor principal */
+
+.cta {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 80px 60px;
+
+    background-color: var(--azul-oscuro);
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+/* Título */
+.cta h2 {
+    font-size: 48px;
+    color: var(--blanco);
+    margin-bottom: 25px;
+}
+
+/* Texto */
+.cta p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+}
+
+/* Botón */
+.cta a {
+    display: inline-block;
+    background-color: var(--verde);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hover */
+.cta a:hover {
+    background-color: var(--azul-oscuro);
+}
+
+/*========================================
+=                FOOTER                  =
+========================================*/
+
+/* Pie de página */
+.footer {
+    background-color: var(--azul-oscuro);
+    padding: 40px 0 20px;
+}
+
+/* Contenido principal del footer */
+.footer-contenido {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.footer-contenido article {
+    flex: 1;
+}
+
+/* Marca */
+.footer-marca img {
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+/* Textos generales */
+.footer p {
+    color: var(--gris-claro);
+    line-height: 1.7;
+}
+
+.footer h3 {
+    color: var(--blanco);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Lista de contacto */
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    color: var(--gris-claro);
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: var(--azul-claro);
+    text-decoration: none;
+}
+
+/* Copyright */
+.footer-copy {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    border-top: 1px solid var(--azul-claro);
+    font-size: 14px;
+}
+
+/*========================================
+=            BOTÓN WHATSAPP              =
+========================================*/
+
+/* Botón flotante de WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.btn-whatsapp img {
+    width: 60px;
+    height: auto;
+}
