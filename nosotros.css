@@ -1,0 +1,94 @@
+/*========================================
+=             PALETA DE COLORES          =
+========================================*/
+:root {
+    --azul-oscuro: #0b1f3a;
+    --azul-claro: #5bc0eb;
+    --verde: #37a169;
+    --gris-oscuro: #1f2937;
+    --gris-medio: #5b6472;
+    --gris-claro: #dfe5ec;
+    --gris-fondo: #f4f8fb;
+    --blanco: #ffffff;
+}
+
+/*========================================
+=             ESTILOS GENERALES          =
+========================================*/
+
+/* Reset general para evitar estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del sitio */
+body {
+    background-color: var(--gris-fondo);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gris-oscuro);
+}
+
+/*========================================
+=          PÁGINA PRINCIPAL: INDEX       =
+========================================*/
+
+/* Header */
+header {
+    background-color: var(--blanco);
+    border-bottom: 1px solid var(--gris-claro);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Mantiene el encabezado visible al desplazarse */
+}
+
+header section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Distribuye los elementos horizontalmente y los centra verticalmente */
+}
+
+header img {
+    width: 180px;
+    height: auto;
+}
+
+/* Navegación principal */
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    /* Elimina las viñetas de la lista */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--gris-oscuro);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--azul-claro);
+}
+
+/* Botón de inicio de sesión */
+.login {
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/*========================================
+=                 HERO                   =
+========================================*/
