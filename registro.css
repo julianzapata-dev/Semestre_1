@@ -23,7 +23,7 @@ body {
     color: var(--gris-oscuro);
 }
 
-/*Header*/
+/* Header */
 header {
     background-color: var(--blanco);
     border-bottom: 1px solid var(--gris-claro);
@@ -55,6 +55,10 @@ nav a {
     font-weight: 500;
 }
 
+nav a:hover {
+    color: var(--azul-claro);
+}
+
 .login {
     background-color: var(--azul-claro);
     color: var(--blanco);
@@ -64,8 +68,8 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: var(--azul-claro);
+.login:hover {
+    opacity: 0.8;
 }
 
 header img {

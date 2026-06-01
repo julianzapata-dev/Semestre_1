@@ -89,6 +89,11 @@ nav a:hover {
     font-weight: bold;
 }
 
+.login:hover {
+    opacity: 0.8;
+}
+
+
 /*========================================
 =                 HERO                   =
 ========================================*/
@@ -151,6 +156,7 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
+
 .boton-primario {
     background-color: var(--azul-claro);
     color: var(--blanco);
@@ -159,6 +165,11 @@ nav a:hover {
     border-radius: 10px;
     font-weight: bold;
 }
+
+.boton-primario:hover {
+    opacity: 0.8;
+}
+
 
 .boton-secundario {
     background-color: var(--blanco);
