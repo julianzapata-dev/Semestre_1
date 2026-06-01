@@ -183,6 +183,9 @@ select {
     cursor: pointer;
 }
 
+.boton-registro:hover {
+    opacity: 0.9;
+}
 
 /*Login*/
 .registro-login {

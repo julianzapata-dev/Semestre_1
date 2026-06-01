@@ -64,6 +64,10 @@ nav a {
     font-weight: bold;
 }
 
+.login:hover {
+    opacity: 0.9;
+}
+
 nav a:hover {
     color: var(--azul-claro);
 }
@@ -145,7 +149,8 @@ input {
 }
 
 /*Resalta el campo cuando recibe el foco*/
-input:focus {
+input:focus,
+select:focus {
     border-color: var(--azul-claro);
     outline: none;
 }

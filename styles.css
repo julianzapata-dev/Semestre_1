@@ -210,7 +210,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.funcionalidades > p {
+.funcionalidades>p {
     font-size: 20px;
     color: var(--gris-medio);
     line-height: 1.7;
@@ -270,7 +270,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.modulos-texto > p {
+.modulos-texto>p {
     font-size: 20px;
     color: var(--gris-medio);
     line-height: 1.7;
@@ -385,12 +385,17 @@ nav a:hover {
 .boton-cta {
     display: inline-block;
     padding: 15px 30px;
-
     background-color: var(--verde);
     color: var(--blanco);
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: var(--verde);
+    color: var(--blanco);
+    opacity: 0.9;
 }
 
 /*========================================
